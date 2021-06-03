@@ -1,0 +1,8 @@
+{{jsonString}}
+
+<hr>
+<div>utenti presenti: {{ utenti.length }}</div>
+
+<div *ngFor="let utente of utenti">
+  <li>{{  utente.name }} - {{ utente.username }}
+</div>
