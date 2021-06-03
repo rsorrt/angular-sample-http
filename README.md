@@ -1,3 +1,3 @@
-# angular-ivy-vepogv
+# angular-sample-http
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-vepogv)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/log-angular-sample-http)
