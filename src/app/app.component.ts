@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
 
   
   ngOnInit() {
-    this.fetchUtenti();
+   // this.fetchUtenti();
   }
 
   fetchUtenti() {
