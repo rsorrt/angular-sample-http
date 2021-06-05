@@ -6,6 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
+import { ProveComponent } from './prove/prove.component';
+
 
 @NgModule({
   imports:      [ 
@@ -14,7 +16,14 @@ import { HelloComponent } from './hello.component';
     HttpClientModule
   ],
   
-  declarations: [ AppComponent, HelloComponent ],
+  
+  declarations: [ 
+    AppComponent,
+    HelloComponent, 
+    ProveComponent
+    ],
+
+
   bootstrap:    [ AppComponent ],
   providers: []
 })
