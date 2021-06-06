@@ -1,18 +1,14 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "Post 1"
-    },
-    {
-      "id": 2,
-      "title": "Post 2"
-    },
-    {
-      "id": 3,
-      "title": "Post 3"
-    }
+  "users": [
+  
+    { "id": 1, "name": "pippo 1", "username": "sniffo 1"},
+    { "id": 2, "name": "pippo 1", "username": "sniffo 2"},
+    { "id": 3, "name": "pippo 1", "username": "sniffo 3"},
+    { "id": 4, "name": "pippo 1", "username": "sniffo 4"},
+    { "id": 5, "name": "pippo 1", "username": "sniffo 5"},
+  
   ],
+
   "comments": [
     {
       "id": 1,
