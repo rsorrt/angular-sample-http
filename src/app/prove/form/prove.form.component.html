@@ -1,0 +1,41 @@
+<div class="container">
+
+  <h3>FORM model-driven</h3>
+
+   {{ model | json }}
+
+   <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+
+   <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name"
+          required
+          [(ngModel)]="model.name" 
+          name="name"
+          #name="ngModel">
+          <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+       </div>
+
+   <div class="form-group">
+        <label for="power">Hero Power</label>
+        <select class="form-control" id="ruolo"
+                required
+                [(ngModel)]="model.ruolo" name="ruolo"
+                #ruolo="ngModel">
+          <option *ngFor="let ruolo of ruoli" [value]="ruolo">{{ruolo}}</option>
+        </select>
+         <div [hidden]="ruolo.valid || ruolo.pristine"
+             class="alert alert-danger">
+          Ruolo is required
+      </div>
+   </div>
+
+  <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+  
+  <button type="button" class="btn btn-default" (click)="newUser();heroForm.reset() ">New utente</button>
+
+   </form>
+

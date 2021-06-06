@@ -4,24 +4,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 
 import { ProveComponent } from './prove/prove.component';
+import { ProveFormComponent } from  './prove/form/prove.form.component';
 
 
 @NgModule({
   imports:      [ 
-    BrowserModule,
-    FormsModule,
-    HttpClientModule
+    BrowserModule, FormsModule, HttpClientModule
   ],
   
   
   declarations: [ 
+
     AppComponent,
-    HelloComponent, 
-    ProveComponent
-    ],
+
+    //-----------------------------
+    ProveComponent,
+    ProveFormComponent
+    //-----------------------------
+
+  ], //declarations
 
 
   bootstrap:    [ AppComponent ],
